@@ -1,7 +1,12 @@
 {
+    "ts-node": {
+    "moduleTypes": {
+      "**/*.ts": "esm"
+    }
+  },
   "compilerOptions": {
     "target": "ES2016",
-    "module": "commonjs",
+    "module": "esnext",
     "rootDir": "./src",
     "outDir": "./dist",
     "esModuleInterop": true,
