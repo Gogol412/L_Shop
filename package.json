@@ -1,0 +1,39 @@
+{
+  "name": "l_shop",
+  "version": "1.0.0",
+  "description": "Создатели этого - Свиридо, Фирсова, Шиманский, Ярошевич",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint 'src/**/*.{ts,js}'",
+    "format": "prettier --write .",
+    "dev": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gogol412/L_Shop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Gogol412/L_Shop/issues"
+  },
+  "homepage": "https://github.com/Gogol412/L_Shop#readme",
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.3.3",
+    "@typescript-eslint/eslint-plugin": "^8.56.1",
+    "@typescript-eslint/parser": "^8.56.1",
+    "eslint": "^10.0.2",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.5",
+    "nodemon": "^3.1.14",
+    "prettier": "^3.8.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
