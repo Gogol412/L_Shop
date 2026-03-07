@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "description": "Создатели этого - Свиридо, Фирсова, Шиманский, Ярошевич",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "lint": "eslint 'src/**/*.{ts,js}'",
-    "format": "prettier --write .",
-    "dev": "nodemon"
+    "build": "rimraf ./build && npx tsc",
+    "start": "npm run build && node build/index",
+    "dev": "npx nodemon",
+    "lint": "npx eslint ./src",
+    "format": "npx eslint ./src --fix"
   },
   "repository": {
     "type": "git",
@@ -15,12 +18,14 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/Gogol412/L_Shop/issues"
   },
   "homepage": "https://github.com/Gogol412/L_Shop#readme",
   "devDependencies": {
+    "@eslint/eslintrc": "^3.3.4",
+    "@eslint/js": "^10.0.1",
+    "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
     "@types/node": "^25.3.3",
     "@typescript-eslint/eslint-plugin": "^8.56.1",
@@ -28,12 +33,14 @@
     "eslint": "^10.0.2",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.5",
+    "globals": "^17.4.0",
     "nodemon": "^3.1.14",
     "prettier": "^3.8.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   },
   "dependencies": {
+    "cors": "^2.8.6",
     "express": "^5.2.1"
   }
 }

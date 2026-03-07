@@ -9,6 +9,10 @@
         "plugin:@typescript-eslint/recommended",
         "plugin:prettier/recommended"
     ],
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": 2018
+    },
     "env": {
         "node": true,
         "es6": true,
