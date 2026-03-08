@@ -141,6 +141,10 @@ function App() {
         <p>После подтверждения оплаты курьер <br></br>доставит ваш заказ точно в срок.</p>
       </div>
 
+      <div className="ButtonChooseDesert">
+        <p>Выбрать десерт</p>
+      </div>
+
     </>
   );
 }

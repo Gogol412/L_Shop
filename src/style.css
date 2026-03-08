@@ -415,4 +415,23 @@
         z-index: 2;
     }
 
+    .ButtonChooseDesert{
+        width: 200px;
+        height: 70px;
+        position: absolute;
+        top: 2650px;
+        background-color: white;
+        border: none;
+        border-radius: 40px;
+        left: 160px;
+        display: flex;              
+        align-items: center;   
+        justify-content: center; 
+    }
+    .ButtonChooseDesert p{
+        color: black;
+        font-family: 'Inter', sans-serif;
+        font-size: 18pt;
+    }
+
 }
