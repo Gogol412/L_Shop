@@ -96,15 +96,50 @@ function App() {
       <div className="ButtonBuy2">
         <p>Заказать</p>
       </div>
-      
-      <div className="HowToBuyBlock">
 
+      <div className="HowToBuyBlock">
+      
       </div>
 
       <div className="HowToBuyText">
         <p>Как заказать </p>
       </div>
       
+      <div className="HowToBuyDopText">
+        <p>Если вы предпочитаете личное посещение магазина,<br></br> приходите в любое удобное время: сотрудники расскажут<br></br> обо всех особенностях выбора, помогут оформить<br></br> индивидуальный заказ и предложат напитки <br></br> для дегустации.</p>
+      </div>
+
+      <div className="HowToBuyBlockPoint1">
+        <p>1</p>
+      </div>
+
+      <div className="HowToBuyBlockPoint1Text">
+        <p>Изучите наш подробный каталог, выбрав<br></br> категорию интересующего продукта.</p>
+      </div>
+
+      <div className="HowToBuyBlockPoint2">
+        <p>2</p>
+      </div>
+
+      <div className="HowToBuyBlockPoint2Text">
+        <p>Добавьте выбранные товары в корзину, указав <br></br>необходимое количество.</p>
+      </div>
+
+      <div className="HowToBuyBlockPoint3">
+        <p>3</p>
+      </div>
+
+      <div className="HowToBuyBlockPoint3Text">
+        <p>Оформите заявку, заполнив простую анкету<br></br> с контактными данными.</p>
+      </div>
+
+      <div className="HowToBuyBlockPoint4">
+        <p>4</p>
+      </div>
+
+      <div className="HowToBuyBlockPoint4Text">
+        <p>После подтверждения оплаты курьер <br></br>доставит ваш заказ точно в срок.</p>
+      </div>
 
     </>
   );

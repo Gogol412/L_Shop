@@ -260,7 +260,7 @@
 
     .HowToBuyBlock{
         position: absolute;
-        height: 1300px;
+        height: 680px;
         width: 1250px;
         border-radius: 20px;
         top: 2100px;
@@ -275,6 +275,144 @@
         font-family: 'Inter', sans-serif;
         top: 2100px;
         left: 140px;
+    }
+
+    .HowToBuyDopText{
+        position: absolute;
+        font-size: 14pt;
+        font-family: 'Inter', sans-serif;
+        top: 2220px;
+        left: 140px;
+    }
+    .HowToBuyBlockPoint1{
+        position: absolute;
+        height: 120px;
+        width: 600px;
+        border-radius: 20px;
+        top: 2150px;
+        left: 750px;
+        background-color: #D78EA8;
+        z-index: 2;
+        display: flex;              
+        align-items: center;   
+        justify-content: center; 
+        font-family: 'Inter', sans-serif;
+    }
+
+    .HowToBuyBlockPoint1 p{
+        position: absolute;
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-size: 36pt;
+        left: 20px;
+    }
+
+    .HowToBuyBlockPoint1Text{
+        position: absolute;
+        top: 2170px;
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-size: 14pt;
+        left: 850px;
+        z-index: 2;
+    }
+
+    .HowToBuyBlockPoint2{
+        position: absolute;
+        height: 120px;
+        width: 600px;
+        border-radius: 20px;
+        top: 2300px;
+        left: 750px;
+        background-color: #D78EA8;
+        z-index: 2;
+        display: flex;              
+        align-items: center;   
+        justify-content: center; 
+        font-family: 'Inter', sans-serif;
+    }
+
+    .HowToBuyBlockPoint2 p{
+        position: absolute;
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-size: 36pt;
+        left: 20px;
+    }
+    .HowToBuyBlockPoint2Text{
+        position: absolute;
+        top: 2320px;
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-size: 14pt;
+        left: 850px;
+        z-index: 2;
+    }
+
+    .HowToBuyBlockPoint3{
+        position: absolute;
+        height: 120px;
+        width: 600px;
+        border-radius: 20px;
+        top: 2450px;
+        left: 750px;
+        background-color: #D78EA8;
+        z-index: 2;
+        display: flex;              
+        align-items: center;   
+        justify-content: center; 
+        font-family: 'Inter', sans-serif;
+    }
+
+    .HowToBuyBlockPoint3 p{
+        position: absolute;
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-size: 36pt;
+        left: 20px;
+    }
+
+    .HowToBuyBlockPoint3Text{
+        position: absolute;
+        top: 2470px;
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-size: 14pt;
+        left: 850px;
+        z-index: 2;
+    }
+
+    .HowToBuyBlockPoint4{
+        position: absolute;
+        height: 120px;
+        width: 600px;
+        border-radius: 20px;
+        top: 2600px;
+        left: 750px;
+        background-color: #D78EA8;
+        z-index: 2;
+        display: flex;              
+        align-items: center;   
+        justify-content: center; 
+        font-family: 'Inter', sans-serif;
+    }
+
+    .HowToBuyBlockPoint4 p{
+        position: absolute;
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-size: 36pt;
+        left: 20px;
+    }
+
+    .HowToBuyBlockPoint4Text{
+        position: absolute;
+        top: 2620px;
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-size: 14pt;
+        left: 850px;
+        z-index: 2;
     }
 
 }
