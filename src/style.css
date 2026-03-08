@@ -1,235 +1,280 @@
-.Katalog {
-    position: absolute;
-    top:10px;
-    height: 40px;
-    width: 120px;
-    left: 120px;
-    border: none;
-    font-size: 18pt;
-    border-radius: 15px;
-    background-color: #F8D3DB;
-    display: flex;           
-    align-items: center;     
-    justify-content: center; 
-    font-family: 'Inter', sans-serif;
-}
-.fordownload{
-    position: absolute;
-    top: 3000px;
-    color: white;
-}
-.Cakes {
-    position: absolute;
-    top:-20px;
-    left: 720px;
-    font-weight: bold;
-    font-size: 24pt;
-    align-items: center;     
-    font-family: 'Inter', sans-serif;
-}
-.MainPic {
-    position: absolute;
-    top: 80px;
-    left: 50%;                 
-    transform: translateX(-50%);
-}
-.MainTextOnPic p{
-    color: white;
-    font-size: 36pt;
-    position: absolute;
-    top:120px;
-    left: 150px;
-    font-family: 'Inter', sans-serif;
-}
-.DopTextOnPic p{
-    color: white;
-    font-size: 14pt;
-    position: absolute;
-    top:320px;
-    left: 150px;
-    font-family: 'Inter', sans-serif;
-}
-.KatalogButton {
-    position: absolute;
-    top: 530px;
-    left: 150px;
-    background-color: white;
-    width: 250px;
-    height: 45px;
-    border-radius: 20px;
-    display: flex;              
-    align-items: center;   
-    justify-content: center; 
-    font-family: 'Inter', sans-serif;
-}
-.KatalogButton p{
-    color: black;
-    font-size: 18pt;
-}
-.CakesIt{
-    position: absolute;
-    font-family: 'Inter', sans-serif;
-    top: 780px;
-    left: 120px;
-}
-.CakesIt p{
-    color: black;
-    font-size: 32pt;
-    font-weight: bold;
-}
-.BlockWithTeam{
-    position: absolute;
-    width: 700px;
-    height: 250px;
-    background-color: #F9F3F5;
-    border: none;
-    border-radius: 20px;
-    top: 900px;
-    left: 120px;
-}
-.BlockWithTeam p{
-    font-family: 'Inter', sans-serif;
-    font-size: 14pt;
-    position: absolute;
-    left: 20px;
-}
-.BlockWithIngridients{
-    position: absolute;
-    width: 700px;
-    height: 170px;
-    background-color: #D78EA8;
-    border: none;
-    border-radius: 20px;
-    top: 1170px;
-    left: 120px;
-}
-.BlockWithIngridients p{
-    color: white;
-    font-family: 'Inter', sans-serif;
-    font-size: 14pt;
-    position: absolute;
-    left: 20px;
-}
-.PictureFor2Blocks img{
-    position: absolute;
-    object-fit: cover;
-    top: 900px;
-    left: 850px;
-    height: 440px;
-    width: 550px;
-    border-radius: 20px;
-}
-.PopularTov {
-    position: absolute;
-    top: 1400px;
-    left: 120px;
-}
-.PopularTov p{
-    font-family: 'Inter', sans-serif;
-    font-size: 32pt;
-    font-weight: bold;
-}
-.ButtonPrev1{
-    position: absolute;
-    top: 1435px;
-    background-color: #F9F3F5;
-    width: 70px;
-    height: 70px;
-    left: 600px;
-    border-radius: 50px;
-    display: flex;              
-    align-items: center;   
-    justify-content: center; 
-    font-family: 'Inter', sans-serif;
-}
-.ButtonPrev1 p{
-    font-size: 30pt;
-    
-}
-.ButtonNext1{
-    position: absolute;
-    top: 1435px;
-    background-color: #F9F3F5;
-    width: 70px;
-    height: 70px;
-    left: 700px;
-    border-radius: 50px;
-    display: flex;              
-    align-items: center;   
-    justify-content: center; 
-    font-family: 'Inter', sans-serif;
-}
-.ButtonNext1 p{
-    font-size: 30pt;
-}
-.Cupcakes{
-    position: absolute;
-    top: 1540px;
-    left: 120px;
-}
-.Cupcakes img{
-    position: absolute;
-    object-fit: cover;
-    height: 440px;
-    width: 550px;
-    border-radius: 20px;
-}
-.CupCakesText{
-    position: absolute;
-    color: white;
-    font-size: 20pt;
-    font-family: 'Inter', sans-serif;
-    top: 1530px;
-    left: 140px;
-}
+@media screen and (min-width: 1024px) {
+    .Katalog {
+        position: absolute;
+        top:10px;
+        height: 40px;
+        width: 120px;
+        left: 120px;
+        border: none;
+        font-size: 18pt;
+        border-radius: 15px;
+        background-color: #F8D3DB;
+        display: flex;           
+        align-items: center;     
+        justify-content: center; 
+        font-family: 'Inter', sans-serif;
+    }
+    .fordownload{
+        position: absolute;
+        top: 3000px;
+        color: white;
+    }
+    .Cakes {
+        position: absolute;
+        top:-20px;
+        left: 720px;
+        font-weight: bold;
+        font-size: 24pt;
+        align-items: center;     
+        font-family: 'Inter', sans-serif;
+    }
+    .MainPic {
+        position: absolute;
+        top: 80px;
+        left: 50%;                 
+        transform: translateX(-50%);
+    }
+    .MainTextOnPic p{
+        color: white;
+        font-size: 36pt;
+        position: absolute;
+        top:120px;
+        left: 150px;
+        font-family: 'Inter', sans-serif;
+    }
+    .DopTextOnPic p{
+        color: white;
+        font-size: 14pt;
+        position: absolute;
+        top:320px;
+        left: 150px;
+        font-family: 'Inter', sans-serif;
+    }
+    .KatalogButton {
+        position: absolute;
+        top: 530px;
+        left: 150px;
+        background-color: white;
+        width: 250px;
+        height: 45px;
+        border-radius: 20px;
+        display: flex;              
+        align-items: center;   
+        justify-content: center; 
+        font-family: 'Inter', sans-serif;
+    }
+    .KatalogButton p{
+        color: black;
+        font-size: 18pt;
+    }
+    .CakesIt{
+        position: absolute;
+        font-family: 'Inter', sans-serif;
+        top: 780px;
+        left: 120px;
+    }
+    .CakesIt p{
+        color: black;
+        font-size: 32pt;
+        font-weight: bold;
+    }
+    .BlockWithTeam{
+        position: absolute;
+        width: 700px;
+        height: 250px;
+        background-color: #F9F3F5;
+        border: none;
+        border-radius: 20px;
+        top: 900px;
+        left: 120px;
+    }
+    .BlockWithTeam p{
+        font-family: 'Inter', sans-serif;
+        font-size: 14pt;
+        position: absolute;
+        left: 20px;
+    }
+    .BlockWithIngridients{
+        position: absolute;
+        width: 700px;
+        height: 170px;
+        background-color: #D78EA8;
+        border: none;
+        border-radius: 20px;
+        top: 1170px;
+        left: 120px;
+    }
+    .BlockWithIngridients p{
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-size: 14pt;
+        position: absolute;
+        left: 20px;
+    }
+    .PictureFor2Blocks img{
+        position: absolute;
+        object-fit: cover;
+        top: 900px;
+        left: 850px;
+        height: 440px;
+        width: 550px;
+        border-radius: 20px;
+    }
+    .PopularTov {
+        position: absolute;
+        top: 1400px;
+        left: 120px;
+    }
+    .PopularTov p{
+        font-family: 'Inter', sans-serif;
+        font-size: 32pt;
+        font-weight: bold;
+    }
+    .ButtonPrev1{
+        position: absolute;
+        top: 1435px;
+        background-color: #F9F3F5;
+        width: 70px;
+        height: 70px;
+        left: 600px;
+        border-radius: 50px;
+        display: flex;              
+        align-items: center;   
+        justify-content: center; 
+        font-family: 'Inter', sans-serif;
+    }
+    .ButtonPrev1 p{
+        font-size: 30pt;
+        
+    }
+    .ButtonNext1{
+        position: absolute;
+        top: 1435px;
+        background-color: #F9F3F5;
+        width: 70px;
+        height: 70px;
+        left: 700px;
+        border-radius: 50px;
+        display: flex;              
+        align-items: center;   
+        justify-content: center; 
+        font-family: 'Inter', sans-serif;
+    }
+    .ButtonNext1 p{
+        font-size: 30pt;
+    }
+    .Cupcakes{
+        position: absolute;
+        top: 1540px;
+        left: 120px;
+    }
+    .Cupcakes img{
+        position: absolute;
+        object-fit: cover;
+        height: 440px;
+        width: 550px;
+        border-radius: 20px;
+    }
+    .CupCakesText{
+        position: absolute;
+        color: white;
+        font-size: 20pt;
+        font-family: 'Inter', sans-serif;
+        top: 1530px;
+        left: 140px;
+    }
+    .CupCakesPrice{
+        position: absolute;
+        font-size: 22pt;
+        font-family: 'Inter', sans-serif;
+        top: 1560px;
+        left: 140px;
+        color: white;
+    }
+    .Cheescakes{
+        position: absolute;
+        top: 1540px;
+        left: 820px;
+    }
+    .Cheescakes img{
+        position: absolute;
+        object-fit: cover;
+        height: 440px;
+        width: 550px;
+        border-radius: 20px;
+    }
+    .CheescakesText{
+        position: absolute;
+        font-size: 20pt;
+        font-family: 'Inter', sans-serif;
+        top: 1530px;
+        left: 840px;
+        color: white;
+    }
+    .CheescakesPrice{
+        position: absolute;
+        font-size: 22pt;
+        font-family: 'Inter', sans-serif;
+        top: 1560px;
+        left: 840px;
+        color: white;
+    }
 
-.Cheescakes{
-    position: absolute;
-    top: 1540px;
-    left: 820px;
-}
-.Cheescakes img{
-    position: absolute;
-    object-fit: cover;
-    height: 440px;
-    width: 550px;
-    border-radius: 20px;
-}
+    .ButtonBuy{
+        width: 180px;
+        height: 70px;
+        position: absolute;
+        top: 1900px;
+        background-color: #D78EA8;
+        border: none;
+        border-radius: 40px;
+        left: 480px;
+        display: flex;              
+        align-items: center;   
+        justify-content: center; 
+    }
+    .ButtonBuy p{
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-size: 18pt;   
+    }
 
-.ButtonBuy{
-    width: 180px;
-    height: 70px;
-    position: absolute;
-    top: 1900px;
-    background-color: #D78EA8;
-    border: none;
-    border-radius: 40px;
-    left: 480px;
-    display: flex;              
-    align-items: center;   
-    justify-content: center; 
-}
-.ButtonBuy p{
-    color: white;
-    font-family: 'Inter', sans-serif;
-    font-size: 18pt;   
-}
+    .ButtonBuy2{
+        width: 180px;
+        height: 70px;
+        position: absolute;
+        top: 1900px;
+        background-color: #D78EA8;
+        border: none;
+        border-radius: 40px;
+        left: 1180px;
+        display: flex;              
+        align-items: center;   
+        justify-content: center; 
+    }
+    .ButtonBuy2 p{
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-size: 18pt;   
+    }
 
-.ButtonBuy2{
-    width: 180px;
-    height: 70px;
-    position: absolute;
-    top: 1900px;
-    background-color: #D78EA8;
-    border: none;
-    border-radius: 40px;
-    left: 1180px;
-    display: flex;              
-    align-items: center;   
-    justify-content: center; 
-}
-.ButtonBuy2 p{
-    color: white;
-    font-family: 'Inter', sans-serif;
-    font-size: 18pt;   
+    .HowToBuyBlock{
+        position: absolute;
+        height: 1300px;
+        width: 1250px;
+        border-radius: 20px;
+        top: 2100px;
+        left: 120px;
+        background-color: #F9F3F5;
+    }
+
+    .HowToBuyText{
+        position: absolute;
+        font-size: 32pt;
+        font-weight: bold;
+        font-family: 'Inter', sans-serif;
+        top: 2100px;
+        left: 140px;
+    }
+
 }
