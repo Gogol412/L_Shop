@@ -7,6 +7,11 @@ import cupcake from "./Капкейки.jpg";
 import cheescake from "./Чизкейки.jpg";
 
 const Home = () => {
+  const popularProducts = [
+    { id: 1, name: "Капкейки", price: "50 BYN/10 шт.", image: cupcake },
+    { id: 2, name: "Чизкейки", price: "55 BYN/8 шт.", image: cheescake },
+  ];
+
   return (
     <>
       <div className="Katalog">
@@ -60,48 +65,17 @@ const Home = () => {
         <p>Популярные товары</p>
       </div>
 
-      <div className="fordownload">
-        1
-      </div>
-
-      <div className="ButtonPrev1">
-        <p> ←</p>
-      </div>
-
-      <div className="ButtonNext1">
-        <p>→</p>
-      </div>
-
-      <div className="Cupcakes">
-        <img src={cupcake} alt="desert" />
-      </div>
-
-      <div className="CupCakesText">
-        <p>Капкейки</p>
-      </div>
-
-      <div className="CupCakesPrice">
-        <p> 50 BYN/10 шт.</p>
-      </div>
-
-      <div className="Cheescakes">
-        <img src={cheescake} alt="desert" />
-      </div>
-
-      <div className="CheescakesText">
-        <p>Чизкейки</p>
-      </div>
-
-      <div className="CheescakesPrice">
-        <p> 50 BYN/10 шт.</p>
-      </div>
-
-      <div className="ButtonBuy">
-        <p>Заказать</p>
-      </div>
-
-      <div className="ButtonBuy2">
-        <p>Заказать</p>
+      <div className="popular-grid">
+        {popularProducts.map((product) => (
+          <div key={product.id} className="product-card">
+            <div className="product-image">
+              <img src={product.image} alt={product.name} />
+            </div>
+            <div className="product-name">{product.name}</div>
+            <div className="product-price">{product.price}</div>
+            <div className="product-button">В корзину</div>
+          </div>
+        ))}
       </div>
 
       <div className="HowToBuyBlock"></div>
