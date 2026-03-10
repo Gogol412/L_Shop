@@ -20,6 +20,17 @@ const Profile = () => {
         <span>+375 (00) 000-00-00</span>
     </div>
 
+    <div className='DiscountBlock'>
+        <p>Скидка</p>
+        <span>До 50%</span>
+    </div>
+
+    <div className='SumOfDeserts'>
+        <p>Сумма вашей корзины</p>
+        <span>1200 BYN</span>
+    </div>
+
+
     </>
   );
 };

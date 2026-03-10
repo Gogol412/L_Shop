@@ -484,6 +484,63 @@
         font-family: 'Inter', sans-serif;
         left: 110px;
         top: 45px;
-
     }
+
+    .DiscountBlock{
+        position: absolute;
+        width: 150px;
+        height: 90px;
+        border-radius: 30px;
+        background-color: #F9F3F5;
+        top: 100px;
+        left: 900px;
+    }
+    .DiscountBlock p{
+        color: black;
+        font-size: 14pt;
+        font-weight: bold;
+        display: flex;           
+        align-items: center;     
+        justify-content: center; 
+        font-family: 'Inter', sans-serif;
+    }
+    .DiscountBlock span{
+        color: black;
+        font-size: 14pt;
+        position: absolute;
+        font-family: 'Inter', sans-serif;
+        left: 45px;
+        top: 45px;
+    }
+
+    .SumOfDeserts{
+        position: absolute;
+        width: 300px;
+        height: 90px;
+        border-radius: 30px;
+        background-color: #F9F3F5;
+        top: 100px;
+        left: 1100px;
+    }
+    .SumOfDeserts p{
+        color: black;
+        font-size: 14pt;
+        font-weight: bold;
+        display: flex;           
+        align-items: center;     
+        justify-content: center; 
+        font-family: 'Inter', sans-serif;
+    }
+    .SumOfDeserts span{
+        color: black;
+        font-size: 14pt;
+        position: absolute;
+        font-family: 'Inter', sans-serif;
+        left: 45px;
+        top: 45px;
+    }
+
+    
+
+
 }
