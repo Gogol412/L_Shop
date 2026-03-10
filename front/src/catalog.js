@@ -1,29 +1,81 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import "./style.css";
 import { Link } from 'react-router-dom';
+
 import cupcake from "./Капкейки.jpg";
 import cheescake from "./Чизкейки.jpg";
 
 const CatalogPage = () => {
-  const products = [
-    { id: 1, name: "Капкейки", price: "50 BYN/10 шт.", image: cupcake },
-    { id: 2, name: "Чизкейки", price: "55 BYN/8 шт.", image: cheescake },
-    { id: 3, name: "Капкейки", price: "50 BYN/10 шт.", image: cupcake },
-    { id: 4, name: "Чизкейки", price: "55 BYN/8 шт.", image: cheescake },
-    { id: 5, name: "Капкейки", price: "50 BYN/10 шт.", image: cupcake },
-    { id: 6, name: "Чизкейки", price: "55 BYN/8 шт.", image: cheescake },
-    { id: 7, name: "Капкейки", price: "50 BYN/10 шт.", image: cupcake },
-    { id: 8, name: "Чизкейки", price: "55 BYN/8 шт.", image: cheescake },
-    { id: 9, name: "Капкейки", price: "50 BYN/10 шт.", image: cupcake },
-    { id: 10, name: "Чизкейки", price: "55 BYN/8 шт.", image: cheescake },
-    { id: 11, name: "Капкейки", price: "50 BYN/10 шт.", image: cupcake },
-    { id: 12, name: "Чизкейки", price: "55 BYN/8 шт.", image: cheescake },
-  ];
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    // Запрашиваем данные с бэкенда
+    fetch('http://localhost:5000/api/products')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Ошибка загрузки');
+        }
+        return response.json();
+      })
+      .then(data => {
+        setProducts(data);
+        setLoading(false);
+      })
+      .catch(err => {
+        console.error('Ошибка:', err);
+        setError(err.message);
+        setLoading(false);
+      });
+  }, []);
+
+  // Пока грузятся данные
+  if (loading) {
+    return (
+      <>
+        <div className="NavBar">
+          <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <p>Cakes</p>
+          </Link>
+        </div>
+        <div className="Find">
+          <p>🔍 Поиск</p>
+        </div>
+        <div className="ForYou">
+          <p>Подборка для вас</p>
+        </div>
+        <div style={{ textAlign: 'center', padding: '50px' }}>Загрузка...</div>
+      </>
+    );
+  }
+
+  // Если ошибка
+  if (error) {
+    return (
+      <>
+        <div className="NavBar">
+          <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <p>Cakes</p>
+          </Link>
+        </div>
+        <div className="Find">
+          <p>🔍 Поиск</p>
+        </div>
+        <div className="ForYou">
+          <p>Подборка для вас</p>
+        </div>
+        <div style={{ textAlign: 'center', padding: '50px', color: 'red' }}>
+          Ошибка: {error}
+        </div>
+      </>
+    );
+  }
 
   return (
     <>
       <div className="NavBar">
-         <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+        <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
           <p>Cakes</p>
         </Link>
       </div>
@@ -38,10 +90,13 @@ const CatalogPage = () => {
         {products.map((product) => (
           <div key={product.id} className="product-card">
             <div className="product-image">
-              <img src={product.image} alt={product.name} />
+              {/* Тут нужно решить вопрос с картинками */}
+              <img src={product.image || cupcake} alt={product.name} />
             </div>
             <div className="product-name">{product.name}</div>
-            <div className="product-price">{product.price}</div>
+            <div className="product-price">
+              {product.price} BYN/{product.count} шт.
+            </div>
             <div className="product-button">В корзину</div>
           </div>
         ))}
