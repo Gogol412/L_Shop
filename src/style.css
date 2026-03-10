@@ -432,4 +432,58 @@
     .product-button:hover {
         background-color: #c27a9b;
     }
+
+    .Catalog {
+        position: absolute;
+        top:10px;
+        height: 40px;
+        width: 120px;
+        left: 120px;
+        border: none;
+        font-size: 18pt;
+        border-radius: 15px;
+        background-color: #F8D3DB;
+        display: flex;           
+        align-items: center;     
+        justify-content: center; 
+        font-family: 'Inter', sans-serif;
+    }
+    
+    .CakesP {
+        position: absolute;
+        top:-20px;
+        left: 720px;
+        font-weight: bold;
+        font-size: 24pt;
+        align-items: center;     
+        font-family: 'Inter', sans-serif;
+    }
+    
+    .ProfileBlock {
+        position: absolute;
+        width: 350px;
+        height: 90px;
+        border-radius: 30px;
+        background-color: #F9F3F5;
+        top: 100px;
+        left: 120px;
+    }
+    .ProfileBlock p{
+        color: black;
+        font-size: 14pt;
+        font-weight: bold;
+        display: flex;           
+        align-items: center;     
+        justify-content: center; 
+        font-family: 'Inter', sans-serif;
+    }
+    .ProfileBlock span{
+        color: black;
+        font-size: 14pt;
+        position: absolute;
+        font-family: 'Inter', sans-serif;
+        left: 110px;
+        top: 45px;
+
+    }
 }
