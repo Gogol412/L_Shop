@@ -540,7 +540,25 @@
         top: 45px;
     }
 
-    
+    .YourBuyings{
+        position: absolute;
+        color: black;
+        font-family: 'Inter', sans-serif;
+        font-weight: bold;
+        font-size: 32pt;
+        left: 120px;
+        top: 220px;
+    }
 
-
+  
+    .profile-grid {
+        position: absolute;
+        top: 350px; 
+        left: 120px;
+        width: calc(100% - 240px);
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 20px;
+    }
 }
