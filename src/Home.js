@@ -121,7 +121,14 @@ const Home = () => {
       </div>
 
       <div className="ButtonChooseDesert">
+        <Link to="/catalog" style={{ textDecoration: 'none', color: 'inherit' }}>
         <p>Выбрать десерт</p>
+        </Link>
+      </div>
+      <div className = "ToProfile">
+      <Link to="/profile" style={{ textDecoration: 'none', color: 'inherit' }}>
+      <p>☺</p>
+      </Link>
       </div>
     </>
   );

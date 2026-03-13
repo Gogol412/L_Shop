@@ -554,11 +554,29 @@
     .profile-grid {
         position: absolute;
         top: 350px; 
-        left: 120px;
+        left: 100px;
         width: calc(100% - 240px);
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         gap: 20px;
         padding: 20px;
+    }
+    .ToProfile{
+        color: black;
+        position: absolute;
+        top: -60px;
+        right: 120px;
+    }
+    .ToProfile p{
+        font-size: 40pt;
+    }
+    .ToProfile1{
+        color: black;
+        position: absolute;
+        top: -60px;
+        right: 120px;
+    }
+    .ToProfile1 p{
+        font-size: 40pt;
     }
 }

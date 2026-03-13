@@ -40,7 +40,7 @@ const Profile = () => {
       </div>
 
       <div className='YourBuyings'>
-        <p>Ваши покупки</p>
+        <p>Корзина</p>
       </div>
 
       <div className="profile-grid">
