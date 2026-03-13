@@ -1,612 +1,732 @@
 @media screen and (min-width: 1024px) {
-    .Katalog {
-        position: absolute;
-        top: 10px;
-        height: 40px;
-        width: 120px;
-        left: 120px;
-        border: none;
-        font-size: 18pt;
-        border-radius: 15px;
-        background-color: #F8D3DB;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: 'Inter', sans-serif;
-    }
-
-    .fordownload {
-        position: absolute;
-        top: 3000px;
-        color: white;
-    }
-
-    .Cakes {
-        position: absolute;
-        top: -20px;
-        left: 720px;
-        font-weight: bold;
-        font-size: 24pt;
-        align-items: center;
-        font-family: 'Inter', sans-serif;
-    }
-
-    .MainPic {
-        position: absolute;
-        top: 80px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .MainTextOnPic p {
-        color: white;
-        font-size: 36pt;
-        position: absolute;
-        top: 120px;
-        left: 150px;
-        font-family: 'Inter', sans-serif;
-    }
-
-    .DopTextOnPic p {
-        color: white;
-        font-size: 14pt;
-        position: absolute;
-        top: 320px;
-        left: 150px;
-        font-family: 'Inter', sans-serif;
-    }
-
-    .KatalogButton {
-        position: absolute;
-        top: 530px;
-        left: 150px;
-        background-color: white;
-        width: 250px;
-        height: 45px;
-        border-radius: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: 'Inter', sans-serif;
-    }
-
-    .KatalogButton p {
-        color: black;
-        font-size: 18pt;
-    }
-
-    .CakesIt {
-        position: absolute;
-        font-family: 'Inter', sans-serif;
-        top: 780px;
-        left: 120px;
-    }
-
-    .CakesIt p {
-        color: black;
-        font-size: 32pt;
-        font-weight: bold;
-    }
-
-    .BlockWithTeam {
-        position: absolute;
-        width: 700px;
-        height: 250px;
-        background-color: #F9F3F5;
-        border: none;
-        border-radius: 20px;
-        top: 900px;
-        left: 120px;
-    }
-
-    .BlockWithTeam p {
-        font-family: 'Inter', sans-serif;
-        font-size: 14pt;
-        position: absolute;
-        left: 20px;
-    }
-
-    .BlockWithIngridients {
-        position: absolute;
-        width: 700px;
-        height: 170px;
-        background-color: #D78EA8;
-        border: none;
-        border-radius: 20px;
-        top: 1170px;
-        left: 120px;
-    }
-
-    .BlockWithIngridients p {
-        color: white;
-        font-family: 'Inter', sans-serif;
-        font-size: 14pt;
-        position: absolute;
-        left: 20px;
-    }
-
-    .PictureFor2Blocks img {
-        position: absolute;
-        object-fit: cover;
-        top: 900px;
-        left: 850px;
-        height: 440px;
-        width: 550px;
-        border-radius: 20px;
-    }
-
-    .PopularTov {
-        position: absolute;
-        top: 1400px;
-        left: 120px;
-    }
-
-    .PopularTov p {
-        font-family: 'Inter', sans-serif;
-        font-size: 32pt;
-        font-weight: bold;
-    }
-
-    .HowToBuyBlock {
-        position: absolute;
-        height: 680px;
-        width: 1250px;
-        border-radius: 20px;
-        top: 2100px;
-        left: 120px;
-        background-color: #F9F3F5;
-    }
-
-    .HowToBuyText {
-        position: absolute;
-        font-size: 32pt;
-        font-weight: bold;
-        font-family: 'Inter', sans-serif;
-        top: 2100px;
-        left: 140px;
-    }
-
-    .HowToBuyDopText {
-        position: absolute;
-        font-size: 14pt;
-        font-family: 'Inter', sans-serif;
-        top: 2220px;
-        left: 140px;
-    }
-
-    .HowToBuyBlockPoint1 {
-        position: absolute;
-        height: 120px;
-        width: 600px;
-        border-radius: 20px;
-        top: 2150px;
-        left: 750px;
-        background-color: #D78EA8;
-        z-index: 2;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: 'Inter', sans-serif;
-    }
-
-    .HowToBuyBlockPoint1 p {
-        position: absolute;
-        color: white;
-        font-family: 'Inter', sans-serif;
-        font-size: 36pt;
-        left: 20px;
-    }
-
-    .HowToBuyBlockPoint1Text {
-        position: absolute;
-        top: 2170px;
-        color: white;
-        font-family: 'Inter', sans-serif;
-        font-size: 14pt;
-        left: 850px;
-        z-index: 2;
-    }
-
-    .HowToBuyBlockPoint2 {
-        position: absolute;
-        height: 120px;
-        width: 600px;
-        border-radius: 20px;
-        top: 2300px;
-        left: 750px;
-        background-color: #D78EA8;
-        z-index: 2;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: 'Inter', sans-serif;
-    }
-
-    .HowToBuyBlockPoint2 p {
-        position: absolute;
-        color: white;
-        font-family: 'Inter', sans-serif;
-        font-size: 36pt;
-        left: 20px;
-    }
-
-    .HowToBuyBlockPoint2Text {
-        position: absolute;
-        top: 2320px;
-        color: white;
-        font-family: 'Inter', sans-serif;
-        font-size: 14pt;
-        left: 850px;
-        z-index: 2;
-    }
-
-    .HowToBuyBlockPoint3 {
-        position: absolute;
-        height: 120px;
-        width: 600px;
-        border-radius: 20px;
-        top: 2450px;
-        left: 750px;
-        background-color: #D78EA8;
-        z-index: 2;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: 'Inter', sans-serif;
-    }
-
-    .HowToBuyBlockPoint3 p {
-        position: absolute;
-        color: white;
-        font-family: 'Inter', sans-serif;
-        font-size: 36pt;
-        left: 20px;
-    }
-
-    .HowToBuyBlockPoint3Text {
-        position: absolute;
-        top: 2470px;
-        color: white;
-        font-family: 'Inter', sans-serif;
-        font-size: 14pt;
-        left: 850px;
-        z-index: 2;
-    }
-
-    .HowToBuyBlockPoint4 {
-        position: absolute;
-        height: 120px;
-        width: 600px;
-        border-radius: 20px;
-        top: 2600px;
-        left: 750px;
-        background-color: #D78EA8;
-        z-index: 2;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: 'Inter', sans-serif;
-    }
-
-    .HowToBuyBlockPoint4 p {
-        position: absolute;
-        color: white;
-        font-family: 'Inter', sans-serif;
-        font-size: 36pt;
-        left: 20px;
-    }
-
-    .HowToBuyBlockPoint4Text {
-        position: absolute;
-        top: 2620px;
-        color: white;
-        font-family: 'Inter', sans-serif;
-        font-size: 14pt;
-        left: 850px;
-        z-index: 2;
-    }
-
-    .ButtonChooseDesert {
-        width: 200px;
-        height: 70px;
-        position: absolute;
-        top: 2650px;
-        background-color: white;
-        border: none;
-        border-radius: 40px;
-        left: 160px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .ButtonChooseDesert p {
-        color: black;
-        font-family: 'Inter', sans-serif;
-        font-size: 18pt;
-    }
-
-    .NavBar {
-        position: absolute;
-        top: -20px;
-        left: 120px;
-        font-weight: bold;
-        color: black;
-        font-family: 'Inter', sans-serif;
-        font-size: 24pt;
-    }
-
-    .Find {
-        position: absolute;
-        width: 700px;
-        height: 30px;
-        top: 20px;
-        border-radius: 30px;
-        left: 400px;
-        background-color: #F9F3F5;
-        display: flex;
-        align-items: center;
-        justify-content: left;
-    }
-
-    .Find p {
-        position: absolute;
-        color: black;
-        font-family: 'Inter', sans-serif;
-        font-size: 14pt;
-        left: 20px;
-    }
-
-    .ForYou {
-        position: absolute;
-        width: 500px;
-        color: black;
-        left: 120px;
-        top: 40px;
-    }
-
-    .ForYou p {
-        position: absolute;
-        font-family: 'Inter', sans-serif;
-        font-weight: bold;
-        font-size: 32pt;
-    }
-
-    .products-grid,
-    .popular-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        gap: 20px;
-        padding: 20px;
-    }
-
-    .products-grid {
-        position: relative;
-        margin-top: 120px;
-        width: calc(100% - 240px);
-        left: 120px;
-    }
-
-    .popular-grid {
-        position: absolute;
-        top: 1500px;
-        left: 120px;
-        width: calc(100% - 240px);
-    }
-
-    .product-card {
-        background: #fff;
-        border-radius: 20px;
-        overflow: hidden;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .product-card:hover {
-        transform: translateY(-5px);
-    }
-
-    .product-image {
-        width: 100%;
-        height: 250px;
-        overflow: hidden;
-    }
-
-    .product-image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .product-name {
-        font-size: 22px;
-        font-weight: bold;
-        margin: 15px 20px 5px;
-        color: #333;
-        font-family: 'Inter', sans-serif;
-    }
-
-    .product-price {
-        font-size: 20px;
-        color: #D78EA8;
-        margin: 0 20px 15px;
-        font-family: 'Inter', sans-serif;
-    }
-
-    .product-button {
-        background-color: #D78EA8;
-        color: white;
-        font-size: 18px;
-        text-align: center;
-        padding: 15px 0;
-        margin: 0 20px 20px;
-        border-radius: 40px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-        font-family: 'Inter', sans-serif;
-        border: none;
-    }
-
-    .product-button:hover {
-        background-color: #c27a9b;
-    }
-
-    .Catalog {
-        position: absolute;
-        top: 10px;
-        height: 40px;
-        width: 120px;
-        left: 120px;
-        border: none;
-        font-size: 18pt;
-        border-radius: 15px;
-        background-color: #F8D3DB;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: 'Inter', sans-serif;
-    }
-
-    .CakesP {
-        position: absolute;
-        top: -20px;
-        left: 720px;
-        font-weight: bold;
-        font-size: 24pt;
-        align-items: center;
-        font-family: 'Inter', sans-serif;
-    }
-
-    .ProfileBlock {
-        position: absolute;
-        width: 350px;
-        height: 90px;
-        border-radius: 30px;
-        background-color: #F9F3F5;
-        top: 100px;
-        left: 120px;
-    }
-
-    .ProfileBlock p {
-        color: black;
-        font-size: 14pt;
-        font-weight: bold;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: 'Inter', sans-serif;
-    }
-
-    .ProfileBlock span {
-        color: black;
-        font-size: 14pt;
-        position: absolute;
-        font-family: 'Inter', sans-serif;
-        left: 110px;
-        top: 45px;
-    }
-
-    .DiscountBlock {
-        position: absolute;
-        width: 150px;
-        height: 90px;
-        border-radius: 30px;
-        background-color: #F9F3F5;
-        top: 100px;
-        left: 900px;
-    }
-
-    .DiscountBlock p {
-        color: black;
-        font-size: 14pt;
-        font-weight: bold;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: 'Inter', sans-serif;
-    }
-
-    .DiscountBlock span {
-        color: black;
-        font-size: 14pt;
-        position: absolute;
-        font-family: 'Inter', sans-serif;
-        left: 45px;
-        top: 45px;
-    }
-
-    .SumOfDeserts {
-        position: absolute;
-        width: 300px;
-        height: 90px;
-        border-radius: 30px;
-        background-color: #F9F3F5;
-        top: 100px;
-        left: 1100px;
-    }
-
-    .SumOfDeserts p {
-        color: black;
-        font-size: 14pt;
-        font-weight: bold;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: 'Inter', sans-serif;
-    }
-
-    .SumOfDeserts span {
-        color: black;
-        font-size: 14pt;
-        position: absolute;
-        font-family: 'Inter', sans-serif;
-        left: 45px;
-        top: 45px;
-    }
-
-    .YourBuyings {
-        position: absolute;
-        color: black;
-        font-family: 'Inter', sans-serif;
-        font-weight: bold;
-        font-size: 32pt;
-        left: 120px;
-        top: 220px;
-    }
-
-
-    .profile-grid {
-        position: absolute;
-        top: 350px;
-        left: 100px;
-        width: calc(100% - 240px);
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        gap: 20px;
-        padding: 20px;
-    }
-
-    .ToProfile {
-        color: black;
-        position: absolute;
-        top: -60px;
-        right: 120px;
-    }
-
-    .ToProfile p {
-        font-size: 40pt;
-    }
-
-    .ToProfile1 {
-        color: black;
-        position: absolute;
-        top: -60px;
-        right: 120px;
-    }
-
-    .ToProfile1 p {
-        font-size: 40pt;
-    }
+  .Katalog {
+    position: absolute;
+    top: 10px;
+    height: 40px;
+    width: 120px;
+    left: 120px;
+    border: none;
+    font-size: 18pt;
+    border-radius: 15px;
+    background-color: #f8d3db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .fordownload {
+    position: absolute;
+    top: 3000px;
+    color: white;
+  }
+
+  .Cakes {
+    position: absolute;
+    top: -20px;
+    left: 720px;
+    font-weight: bold;
+    font-size: 24pt;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .MainPic {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .MainTextOnPic p {
+    color: white;
+    font-size: 36pt;
+    position: absolute;
+    top: 120px;
+    left: 150px;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .DopTextOnPic p {
+    color: white;
+    font-size: 14pt;
+    position: absolute;
+    top: 320px;
+    left: 150px;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .KatalogButton {
+    position: absolute;
+    top: 530px;
+    left: 150px;
+    background-color: white;
+    width: 250px;
+    height: 45px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .KatalogButton p {
+    color: black;
+    font-size: 18pt;
+  }
+
+  .CakesIt {
+    position: absolute;
+    font-family: 'Inter', sans-serif;
+    top: 780px;
+    left: 120px;
+  }
+
+  .CakesIt p {
+    color: black;
+    font-size: 32pt;
+    font-weight: bold;
+  }
+
+  .BlockWithTeam {
+    position: absolute;
+    width: 700px;
+    height: 250px;
+    background-color: #f9f3f5;
+    border: none;
+    border-radius: 20px;
+    top: 900px;
+    left: 120px;
+  }
+
+  .BlockWithTeam p {
+    font-family: 'Inter', sans-serif;
+    font-size: 14pt;
+    position: absolute;
+    left: 20px;
+  }
+
+  .BlockWithIngridients {
+    position: absolute;
+    width: 700px;
+    height: 170px;
+    background-color: #d78ea8;
+    border: none;
+    border-radius: 20px;
+    top: 1170px;
+    left: 120px;
+  }
+
+  .BlockWithIngridients p {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 14pt;
+    position: absolute;
+    left: 20px;
+  }
+
+  .PictureFor2Blocks img {
+    position: absolute;
+    object-fit: cover;
+    top: 900px;
+    left: 850px;
+    height: 440px;
+    width: 550px;
+    border-radius: 20px;
+  }
+
+  .PopularTov {
+    position: absolute;
+    top: 1400px;
+    left: 120px;
+  }
+
+  .PopularTov p {
+    font-family: 'Inter', sans-serif;
+    font-size: 32pt;
+    font-weight: bold;
+  }
+
+  .HowToBuyBlock {
+    position: absolute;
+    height: 680px;
+    width: 1250px;
+    border-radius: 20px;
+    top: 2100px;
+    left: 120px;
+    background-color: #f9f3f5;
+  }
+
+  .HowToBuyText {
+    position: absolute;
+    font-size: 32pt;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    top: 2100px;
+    left: 140px;
+  }
+
+  .HowToBuyDopText {
+    position: absolute;
+    font-size: 14pt;
+    font-family: 'Inter', sans-serif;
+    top: 2220px;
+    left: 140px;
+  }
+
+  .HowToBuyBlockPoint1 {
+    position: absolute;
+    height: 120px;
+    width: 600px;
+    border-radius: 20px;
+    top: 2150px;
+    left: 750px;
+    background-color: #d78ea8;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .HowToBuyBlockPoint1 p {
+    position: absolute;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 36pt;
+    left: 20px;
+  }
+
+  .HowToBuyBlockPoint1Text {
+    position: absolute;
+    top: 2170px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 14pt;
+    left: 850px;
+    z-index: 2;
+  }
+
+  .HowToBuyBlockPoint2 {
+    position: absolute;
+    height: 120px;
+    width: 600px;
+    border-radius: 20px;
+    top: 2300px;
+    left: 750px;
+    background-color: #d78ea8;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .HowToBuyBlockPoint2 p {
+    position: absolute;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 36pt;
+    left: 20px;
+  }
+
+  .HowToBuyBlockPoint2Text {
+    position: absolute;
+    top: 2320px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 14pt;
+    left: 850px;
+    z-index: 2;
+  }
+
+  .HowToBuyBlockPoint3 {
+    position: absolute;
+    height: 120px;
+    width: 600px;
+    border-radius: 20px;
+    top: 2450px;
+    left: 750px;
+    background-color: #d78ea8;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .HowToBuyBlockPoint3 p {
+    position: absolute;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 36pt;
+    left: 20px;
+  }
+
+  .HowToBuyBlockPoint3Text {
+    position: absolute;
+    top: 2470px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 14pt;
+    left: 850px;
+    z-index: 2;
+  }
+
+  .HowToBuyBlockPoint4 {
+    position: absolute;
+    height: 120px;
+    width: 600px;
+    border-radius: 20px;
+    top: 2600px;
+    left: 750px;
+    background-color: #d78ea8;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .HowToBuyBlockPoint4 p {
+    position: absolute;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 36pt;
+    left: 20px;
+  }
+
+  .HowToBuyBlockPoint4Text {
+    position: absolute;
+    top: 2620px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 14pt;
+    left: 850px;
+    z-index: 2;
+  }
+
+  .ButtonChooseDesert {
+    width: 200px;
+    height: 70px;
+    position: absolute;
+    top: 2650px;
+    background-color: white;
+    border: none;
+    border-radius: 40px;
+    left: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ButtonChooseDesert p {
+    color: black;
+    font-family: 'Inter', sans-serif;
+    font-size: 18pt;
+  }
+
+  .NavBar {
+    position: absolute;
+    top: -20px;
+    left: 120px;
+    font-weight: bold;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    font-size: 24pt;
+  }
+
+  .Find {
+    position: absolute;
+    width: 700px;
+    height: 30px;
+    top: 20px;
+    border-radius: 30px;
+    left: 400px;
+    background-color: #f9f3f5;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+
+  .Find p {
+    position: absolute;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    font-size: 14pt;
+    left: 20px;
+  }
+
+  .ForYou {
+    position: absolute;
+    width: 500px;
+    color: black;
+    left: 120px;
+    top: 40px;
+  }
+
+  .ForYou p {
+    position: absolute;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 32pt;
+  }
+
+  .products-grid,
+  .popular-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .products-grid {
+    position: relative;
+    margin-top: 120px;
+    width: calc(100% - 240px);
+    left: 120px;
+  }
+
+  .popular-grid {
+    position: absolute;
+    top: 1500px;
+    left: 120px;
+    width: calc(100% - 240px);
+  }
+
+  .product-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .product-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+  }
+
+  .product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .product-name {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 15px 20px 5px;
+    color: #333;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .product-price {
+    font-size: 20px;
+    color: #d78ea8;
+    margin: 0 20px 15px;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .product-button {
+    background-color: #d78ea8;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 15px 0;
+    margin: 0 20px 20px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Inter', sans-serif;
+    border: none;
+  }
+
+  .product-button:hover {
+    background-color: #c27a9b;
+  }
+
+  .Catalog {
+    position: absolute;
+    top: 10px;
+    height: 40px;
+    width: 120px;
+    left: 120px;
+    border: none;
+    font-size: 18pt;
+    border-radius: 15px;
+    background-color: #f8d3db;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .CakesP {
+    position: absolute;
+    top: -20px;
+    left: 720px;
+    font-weight: bold;
+    font-size: 24pt;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .ProfileBlock {
+    position: absolute;
+    width: 350px;
+    height: 90px;
+    border-radius: 30px;
+    background-color: #f9f3f5;
+    top: 100px;
+    left: 120px;
+  }
+
+  .ProfileBlock p {
+    color: black;
+    font-size: 14pt;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .ProfileBlock span {
+    color: black;
+    font-size: 14pt;
+    position: absolute;
+    font-family: 'Inter', sans-serif;
+    left: 110px;
+    top: 45px;
+  }
+
+  .DiscountBlock {
+    position: absolute;
+    width: 150px;
+    height: 90px;
+    border-radius: 30px;
+    background-color: #f9f3f5;
+    top: 100px;
+    left: 900px;
+  }
+
+  .DiscountBlock p {
+    color: black;
+    font-size: 14pt;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .DiscountBlock span {
+    color: black;
+    font-size: 14pt;
+    position: absolute;
+    font-family: 'Inter', sans-serif;
+    left: 45px;
+    top: 45px;
+  }
+
+  .SumOfDeserts {
+    position: absolute;
+    width: 300px;
+    height: 90px;
+    border-radius: 30px;
+    background-color: #f9f3f5;
+    top: 100px;
+    left: 1100px;
+  }
+
+  .SumOfDeserts p {
+    color: black;
+    font-size: 14pt;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .SumOfDeserts span {
+    color: black;
+    font-size: 14pt;
+    position: absolute;
+    font-family: 'Inter', sans-serif;
+    left: 45px;
+    top: 45px;
+  }
+
+  .YourBuyings {
+    position: absolute;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 32pt;
+    left: 120px;
+    top: 220px;
+  }
+
+  .profile-grid {
+    position: absolute;
+    top: 350px;
+    left: 100px;
+    width: calc(100% - 240px);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .ToProfile {
+    color: black;
+    position: absolute;
+    top: -60px;
+    right: 120px;
+  }
+
+  .ToProfile p {
+    font-size: 40pt;
+  }
+
+  .ToProfile1 {
+    color: black;
+    position: absolute;
+    top: -60px;
+    right: 120px;
+  }
+
+  .ToProfile1 p {
+    font-size: 40pt;
+  }
+
+  .ToBasket {
+    color: black;
+    position: absolute;
+    top: -60px;
+    right: 250px;
+  }
+
+  .ToBasket p {
+    font-size: 40pt;
+  }
+
+  .ToBasket {
+    color: black;
+    position: absolute;
+    top: -60px;
+    right: 250px;
+  }
+
+  .ToBasket1 p {
+    font-size: 40pt;
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.modal-content {
+  margin-top: 80px;
+  margin-right: 20px;
+  animation: fadeInDown 0.3s ease-out;
+}
+
+.screen-modal {
+  background-color: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  border-radius: 20px;
+  width: 500px;
+  min-height: fit-content;
+  font-family: 'Inter', sans-serif;
+}
+
+.screen-modal .text-wrapper {
+  text-align: center;
+  color: #000000;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.screen-modal .text-normal-instance,
+.screen-modal .text-normal-2 {
+  background-color: #f9f3f5 !important;
+  border-radius: 50px !important;
+  margin-bottom: 20px !important;
+  width: 100% !important;
+  height: 60px !important;
+  border: none !important;
+  outline: none !important;
+  padding: 0 20px !important;
+  font-size: 24px !important;
+  font-weight: 500 !important;
+  box-sizing: border-box !important;
+}
+
+.screen-modal .frame-button {
+  align-items: center;
+  background-color: #d68ea8;
+  border-radius: 50px;
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.screen-modal .frame-button:hover {
+  opacity: 0.9;
+}
+
+.screen-modal .div {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.screen-modal .p-signup {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 18px;
+}
+
+.screen-modal .text-wrapper-2 {
+  text-decoration: underline;
+  color: #d68ea8;
+  cursor: pointer;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

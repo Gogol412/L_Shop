@@ -1,36 +1,53 @@
 import React, { useState, useEffect } from 'react';
-import "./style.css";
+import './style.css';
 import { Link } from 'react-router-dom';
+import { useCart } from './context/CartContext'; // <-- добавили импорт
 
-import cupcake from "./Капкейки.jpg";
-import cheescake from "./Чизкейки.jpg";
+import cupcake from './Капкейки.jpg';
+import cheescake from './Чизкейки.jpg';
 
-const CatalogPage = () => {
-  const [products, setProducts] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+interface Product {
+  id: number;
+  name: string;
+  price: number;
+  count: number;
+  image?: string;
+}
+
+const CatalogPage: React.FC = () => {
+  const [products, setProducts] = useState<Product[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
+  const [error, setError] = useState<string | null>(null);
+
+  const { addToCart } = useCart(); // <-- получаем функцию добавления
 
   useEffect(() => {
-    // Запрашиваем данные с бэкенда
     fetch('http://localhost:5000/api/products')
-      .then(response => {
+      .then((response) => {
         if (!response.ok) {
           throw new Error('Ошибка загрузки');
         }
-        return response.json();
+        return response.json() as Promise<Product[]>;
       })
-      .then(data => {
+      .then((data) => {
         setProducts(data);
         setLoading(false);
       })
-      .catch(err => {
+      .catch((err: unknown) => {
         console.error('Ошибка:', err);
-        setError(err.message);
+        if (err instanceof Error) {
+          setError(err.message);
+        } else {
+          setError('Неизвестная ошибка');
+        }
         setLoading(false);
       });
   }, []);
 
-  // Пока грузятся данные
+  const handleAddToCart = (productId: number) => {
+    addToCart(productId); // добавляем товар с количеством 1
+  };
+
   if (loading) {
     return (
       <>
@@ -50,7 +67,6 @@ const CatalogPage = () => {
     );
   }
 
-  // Если ошибка
   if (error) {
     return (
       <>
@@ -87,24 +103,23 @@ const CatalogPage = () => {
       </div>
 
       <div className="products-grid">
-        {products.map((product) => (
+        {products.map((product: Product) => (
           <div key={product.id} className="product-card">
             <div className="product-image">
-              {/* Тут нужно решить вопрос с картинками */}
               <img src={product.image || cupcake} alt={product.name} />
             </div>
             <div className="product-name">{product.name}</div>
             <div className="product-price">
               {product.price} BYN/{product.count} шт.
             </div>
-            <div className="product-button">В корзину</div>
+            <div
+              className="product-button"
+              onClick={() => handleAddToCart(product.id)} // <-- добавили обработчик
+            >
+              В корзину
+            </div>
           </div>
         ))}
-      </div>
-      <div className="ToProfile1">
-        <Link to="/profile" style={{ textDecoration: 'none', color: 'inherit' }}>
-          <p>☺</p>
-        </Link>
       </div>
     </>
   );

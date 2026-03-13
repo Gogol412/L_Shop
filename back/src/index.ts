@@ -6,6 +6,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import productsRoute from "./routes/products.route.js";
 import authRoute from "./routes/auth.route.js";
+import cartRoute from './routes/cart.route.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -27,6 +28,7 @@ app.use(cors({
 
 app.use(express.json());
 app.use(cookieParser());
+app.use('/api/cart', cartRoute);
 
 // Роуты
 app.use("/api/products", productsRoute);
