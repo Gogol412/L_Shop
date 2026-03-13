@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { LoginModal } from './LoginModal';
+import { AuthModal } from './AuthModal';
 import "./style.css";
 import mainImage from "./Главная.jpg";
 import dopImage from "./Картиночка.jpg";
@@ -7,11 +9,14 @@ import cupcake from "./Капкейки.jpg";
 import cheescake from "./Чизкейки.jpg";
 
 const Home = () => {
+  const [isLoginOpen, setIsLoginOpen] = useState(false);
+  const [isRegisterOpen, setIsRegisterOpen] = useState(false);
+
   const popularProducts = [
     { id: 1, name: "Капкейки", price: "50 BYN/10 шт.", image: cupcake },
     { id: 2, name: "Чизкейки", price: "55 BYN/8 шт.", image: cheescake },
   ];
-
+  
   return (
     <>
       <div className="Katalog">
@@ -33,8 +38,8 @@ const Home = () => {
       </div>
 
       <div className="DopTextOnPic">
-        <p>Cakes — место, где рождаются настоящие кулинарные <br />шедевры полные вдохновления и любви к своему делу. Мы создали этот уголок <br />специально для тех, кто хочет окунуться в мир изысканных вкусов,<br />незабываемых ароматов и неповторимых эмоций.<br />
-        Мы делаем каждый десерт уникальным, наполняя его особой магией.</p>
+        <p>Cakes — место, где рождаются настоящие кулинарные <br />шедевры полные вдохновления и любви к своему делу. Мы создали этот уголок <br />специально для тех, кто хочет окунуться в мир изысканных вкусов,<br />незабываемых ароматов и неповторимых эмоций.<br />
+        Мы делаем каждый десерт уникальным, наполняя его особой магией.</p>
       </div>
 
       <div className="KatalogButton">
@@ -53,8 +58,8 @@ const Home = () => {
       </div>
 
       <div className="BlockWithIngridients">
-        <p>Мы выбираем натуральные ингредиенты, следуя <br />принципам здорового питания и экологической<br />ответственности. <br /> <br />
-           Вдохновение рождается там, где встречается любовь <br /> к делу и страсть к созданию уникальных блюд.</p>
+        <p>Мы выбираем натуральные ингредиенты, следуя <br />принципам здорового питания и экологической<br />ответственности. <br /> <br />
+           Вдохновение рождается там, где встречается любовь <br /> к делу и страсть к созданию уникальных блюд.</p>
       </div>
 
       <div className="PictureFor2Blocks">
@@ -85,7 +90,7 @@ const Home = () => {
       </div>
 
       <div className="HowToBuyDopText">
-        <p>Если вы предпочитаете личное посещение магазина,<br /> приходите в любое удобное время: сотрудники расскажут<br /> обо всех особенностях выбора, помогут оформить<br /> индивидуальный заказ и предложат напитки <br /> для дегустации.</p>
+        <p>Если вы предпочитаете личное посещение магазина,<br /> приходите в любое удобное время: сотрудники расскажут<br /> обо всех особенностях выбора, помогут оформить<br /> индивидуальный заказ и предложат напитки <br /> для дегустации.</p>
       </div>
 
       <div className="HowToBuyBlockPoint1">
@@ -93,7 +98,7 @@ const Home = () => {
       </div>
 
       <div className="HowToBuyBlockPoint1Text">
-        <p>Изучите наш подробный каталог, выбрав<br /> категорию интересующего продукта.</p>
+        <p>Изучите наш подробный каталог, выбрав<br /> категорию интересующего продукта.</p>
       </div>
 
       <div className="HowToBuyBlockPoint2">
@@ -101,7 +106,7 @@ const Home = () => {
       </div>
 
       <div className="HowToBuyBlockPoint2Text">
-        <p>Добавьте выбранные товары в корзину, указав <br />необходимое количество.</p>
+        <p>Добавьте выбранные товары в корзину, указав <br />необходимое количество.</p>
       </div>
 
       <div className="HowToBuyBlockPoint3">
@@ -109,7 +114,7 @@ const Home = () => {
       </div>
 
       <div className="HowToBuyBlockPoint3Text">
-        <p>Оформите заявку, заполнив простую анкету<br /> с контактными данными.</p>
+        <p>Оформите заявку, заполнив простую анкету<br /> с контактными данными.</p>
       </div>
 
       <div className="HowToBuyBlockPoint4">
@@ -117,19 +122,32 @@ const Home = () => {
       </div>
 
       <div className="HowToBuyBlockPoint4Text">
-        <p>После подтверждения оплаты курьер <br />доставит ваш заказ точно в срок.</p>
+        <p>После подтверждения оплаты курьер <br />доставит ваш заказ точно в срок.</p>
       </div>
 
       <div className="ButtonChooseDesert">
         <Link to="/catalog" style={{ textDecoration: 'none', color: 'inherit' }}>
-        <p>Выбрать десерт</p>
+          <p>Выбрать десерт</p>
         </Link>
       </div>
-      <div className = "ToProfile">
-      <Link to="/profile" style={{ textDecoration: 'none', color: 'inherit' }}>
-      <p>☺</p>
-      </Link>
+
+      <div className="ToProfile" onClick={() => setIsLoginOpen(true)} style={{ cursor: 'pointer' }}>
+        <p>☺</p>
       </div>
+
+      <LoginModal 
+        isOpen={isLoginOpen} 
+        onClose={() => setIsLoginOpen(false)}
+        onRegisterClick={() => {
+          setIsLoginOpen(false);
+          setIsRegisterOpen(true);
+        }}
+      />
+
+      <AuthModal 
+        isOpen={isRegisterOpen} 
+        onClose={() => setIsRegisterOpen(false)} 
+      />
     </>
   );
 };
