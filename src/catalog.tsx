@@ -4,8 +4,15 @@ import { Link } from 'react-router-dom';
 import cupcake from "./Капкейки.jpg";
 import cheescake from "./Чизкейки.jpg";
 
-const CatalogPage = () => {
-  const products = [
+interface Product {
+  id: number;
+  name: string;
+  price: string;
+  image: string;
+}
+
+const CatalogPage: React.FC = () => {
+  const products: Product[] = [
     { id: 1, name: "Капкейки", price: "50 BYN/10 шт.", image: cupcake },
     { id: 2, name: "Чизкейки", price: "55 BYN/8 шт.", image: cheescake },
     { id: 3, name: "Капкейки", price: "50 BYN/10 шт.", image: cupcake },
@@ -23,7 +30,7 @@ const CatalogPage = () => {
   return (
     <>
       <div className="NavBar">
-         <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+        <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
           <p>Cakes</p>
         </Link>
       </div>
@@ -35,7 +42,7 @@ const CatalogPage = () => {
       </div>
 
       <div className="products-grid">
-        {products.map((product) => (
+        {products.map((product: Product) => (
           <div key={product.id} className="product-card">
             <div className="product-image">
               <img src={product.image} alt={product.name} />
@@ -46,11 +53,12 @@ const CatalogPage = () => {
           </div>
         ))}
       </div>
-      <div className = "ToProfile1">
-            <Link to="/profile" style={{ textDecoration: 'none', color: 'inherit' }}>
-            <p>☺</p>
-            </Link>
-            </div>
+
+      <div className="ToProfile1">
+        <Link to="/profile" style={{ textDecoration: 'none', color: 'inherit' }}>
+          <p>☺</p>
+        </Link>
+      </div>
     </>
   );
 };

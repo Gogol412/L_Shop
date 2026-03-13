@@ -1,7 +1,19 @@
 import React from "react";
 import "./style.css";
 
-export const LoginModal = ({ isOpen, onClose, onRegisterClick, children }) => {
+interface LoginModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+  onRegisterClick: () => void;
+  children?: React.ReactNode;
+}
+
+export const LoginModal = ({
+  isOpen,
+  onClose,
+  onRegisterClick,
+  children,
+}: LoginModalProps) => {
   if (!isOpen) return null;
 
   return (
@@ -27,7 +39,9 @@ export const LoginModal = ({ isOpen, onClose, onRegisterClick, children }) => {
 
           <p className="p-signup">
             <span className="span">Нет аккаунта? </span>
-            <span className="text-wrapper-2" onClick={onRegisterClick}>Создайте</span>
+            <span className="text-wrapper-2" onClick={onRegisterClick}>
+              Создайте
+            </span>
             <span className="span">!</span>
           </p>
           {children}

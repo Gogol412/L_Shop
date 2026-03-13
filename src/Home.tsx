@@ -8,11 +8,18 @@ import dopImage from "./Картиночка.jpg";
 import cupcake from "./Капкейки.jpg";
 import cheescake from "./Чизкейки.jpg";
 
-const Home = () => {
-  const [isLoginOpen, setIsLoginOpen] = useState(false);
-  const [isRegisterOpen, setIsRegisterOpen] = useState(false);
+interface Product {
+  id: number;
+  name: string;
+  price: string;
+  image: string;
+}
 
-  const popularProducts = [
+const Home: React.FC = () => {
+  const [isLoginOpen, setIsLoginOpen] = useState<boolean>(false);
+  const [isRegisterOpen, setIsRegisterOpen] = useState<boolean>(false);
+
+  const popularProducts: Product[] = [
     { id: 1, name: "Капкейки", price: "50 BYN/10 шт.", image: cupcake },
     { id: 2, name: "Чизкейки", price: "55 BYN/8 шт.", image: cheescake },
   ];
@@ -53,7 +60,7 @@ const Home = () => {
       </div>
 
       <div className="BlockWithTeam">
-        <p> Команда профессиональных кондитеров, которая <br />воплотила мечту о создании настоящей кондитерской <br />мастерской, где каждый продукт готовится вручную,<br /> бережно сохраняя индивидуальность и особую<br /> атмосферу домашнего тепла <br /> <br />
+        <p>Команда профессиональных кондитеров, которая <br />воплотила мечту о создании настоящей кондитерской <br />мастерской, где каждый продукт готовится вручную,<br /> бережно сохраняя индивидуальность и особую<br /> атмосферу домашнего тепла <br /> <br />
             Каждый кусочек тортика, каждая крошка печенья <br />несёт частичку души мастера, прошедшего долгий <br />путь от традиционного ремесла до <br />современных тенденций.</p>
       </div>
 
@@ -71,7 +78,7 @@ const Home = () => {
       </div>
 
       <div className="popular-grid">
-        {popularProducts.map((product) => (
+        {popularProducts.map((product: Product) => (
           <div key={product.id} className="product-card">
             <div className="product-image">
               <img src={product.image} alt={product.name} />

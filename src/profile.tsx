@@ -4,8 +4,15 @@ import { Link } from 'react-router-dom';
 import cupcake from "./Капкейки.jpg";
 import cheescake from "./Чизкейки.jpg";
 
-const Profile = () => {
-  const profileProducts = [
+interface Product {
+  id: number;
+  name: string;
+  price: string;
+  image: string;
+}
+
+const Profile: React.FC = () => {
+  const profileProducts: Product[] = [
     { id: 1, name: "Капкейки", price: "50 BYN/10 шт.", image: cupcake },
     { id: 2, name: "Чизкейки", price: "55 BYN/8 шт.", image: cheescake },
     { id: 3, name: "Капкейки", price: "50 BYN/10 шт.", image: cupcake },
@@ -44,7 +51,7 @@ const Profile = () => {
       </div>
 
       <div className="profile-grid">
-        {profileProducts.map((product) => (
+        {profileProducts.map((product: Product) => (
           <div key={product.id} className="product-card">
             <div className="product-image">
               <img src={product.image} alt={product.name} />

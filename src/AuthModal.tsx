@@ -1,7 +1,13 @@
 import React from "react";
 import "./style.css";
 
-export const AuthModal = ({ isOpen, onClose, children }) => {
+interface AuthModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+  children?: React.ReactNode;
+}
+
+export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, children }) => {
   if (!isOpen) return null;
 
   return (

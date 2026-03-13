@@ -4,7 +4,7 @@ import Home from './Home';
 import CatalogPage from './catalog';
 import Profile from './profile';
 
-function App() {
+const App: React.FC = () => {
   return (
     <BrowserRouter>
       <Routes>
