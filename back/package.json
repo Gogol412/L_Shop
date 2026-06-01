@@ -8,6 +8,7 @@
     "build": "rimraf ./build && npx tsc",
     "start": "npm run build && node build/index",
     "dev": "npx nodemon",
+    "test": "npm run build && node --experimental-vm-modules ./node_modules/jest/bin/jest.js --runInBand",
     "lint": "npx eslint ./src",
     "format": "npx eslint ./src --fix"
   },
@@ -35,12 +36,17 @@
     "eslint-plugin-prettier": "^5.5.5",
     "globals": "^17.4.0",
     "nodemon": "^3.1.14",
+    "jest": "^30.2.0",
     "prettier": "^3.8.1",
+    "supertest": "^7.1.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   },
   "dependencies": {
     "cors": "^2.8.6",
     "express": "^5.2.1"
+  },
+  "jest": {
+    "testEnvironment": "node"
   }
 }

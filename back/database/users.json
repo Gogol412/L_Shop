@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "username": "admin",
+    "passwordHash": "sha256:admin-salt:91338f101064650107a448681e2d0b9cb1a344d70c306ace148e869fd69b779e",
+    "role": "admin"
+  },
+  {
+    "id": 2,
+    "username": "user",
+    "passwordHash": "sha256:user-salt:afb0ce4cf0ea0e5e1e1c0e7ea41e643446968061c851ec8c032cee81a895479e",
+    "role": "user"
+  }
+]

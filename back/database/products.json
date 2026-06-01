@@ -1,14 +1,53 @@
 [
-    {
-        "id": 1,
-        "name": "Чизкейки",
-        "price": 55,
-        "count": 10
-    },
-    {
-        "id": 2,
+  {
+    "id": 1,
+    "translations": {
+      "ru": {
         "name": "Капкейки",
-        "price": 50,
-        "count": 8
-    }
+        "description": "Нежные капкейки с кремовой шапочкой и мягким бисквитом."
+      },
+      "en": {
+        "name": "Cupcakes",
+        "description": "Tender cupcakes with creamy topping and soft sponge cake."
+      }
+    },
+    "price": 50,
+    "count": 8,
+    "image": "cupcake",
+    "tags": ["sweet", "cream", "portion", "cake"]
+  },
+  {
+    "id": 2,
+    "translations": {
+      "ru": {
+        "name": "Чизкейки",
+        "description": "Сливочные чизкейки с тонкой основой и насыщенным вкусом."
+      },
+      "en": {
+        "name": "Cheesecakes",
+        "description": "Creamy cheesecakes with a delicate base and rich flavor."
+      }
+    },
+    "price": 55,
+    "count": 10,
+    "image": "cheesecake",
+    "tags": ["sweet", "cream", "cheese", "cake"]
+  },
+  {
+    "id": 3,
+    "translations": {
+      "ru": {
+        "name": "Ягодный торт",
+        "description": "Домашний торт с ягодной начинкой и легким кремом."
+      },
+      "en": {
+        "name": "Berry Cake",
+        "description": "Homemade cake with berry filling and light cream."
+      }
+    },
+    "price": 68,
+    "count": 6,
+    "image": "cake",
+    "tags": ["sweet", "berry", "cream", "cake"]
+  }
 ]
