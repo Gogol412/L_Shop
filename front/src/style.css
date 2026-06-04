@@ -1,732 +1,361 @@
-@media screen and (min-width: 1024px) {
-  .Katalog {
-    position: absolute;
-    top: 10px;
-    height: 40px;
-    width: 120px;
-    left: 120px;
-    border: none;
-    font-size: 18pt;
-    border-radius: 15px;
-    background-color: #f8d3db;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Inter', sans-serif;
-  }
-
-  .fordownload {
-    position: absolute;
-    top: 3000px;
-    color: white;
-  }
-
-  .Cakes {
-    position: absolute;
-    top: -20px;
-    left: 720px;
-    font-weight: bold;
-    font-size: 24pt;
-    align-items: center;
-    font-family: 'Inter', sans-serif;
-  }
-
-  .MainPic {
-    position: absolute;
-    top: 80px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .MainTextOnPic p {
-    color: white;
-    font-size: 36pt;
-    position: absolute;
-    top: 120px;
-    left: 150px;
-    font-family: 'Inter', sans-serif;
-  }
-
-  .DopTextOnPic p {
-    color: white;
-    font-size: 14pt;
-    position: absolute;
-    top: 320px;
-    left: 150px;
-    font-family: 'Inter', sans-serif;
-  }
-
-  .KatalogButton {
-    position: absolute;
-    top: 530px;
-    left: 150px;
-    background-color: white;
-    width: 250px;
-    height: 45px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Inter', sans-serif;
-  }
-
-  .KatalogButton p {
-    color: black;
-    font-size: 18pt;
-  }
-
-  .CakesIt {
-    position: absolute;
-    font-family: 'Inter', sans-serif;
-    top: 780px;
-    left: 120px;
-  }
-
-  .CakesIt p {
-    color: black;
-    font-size: 32pt;
-    font-weight: bold;
-  }
-
-  .BlockWithTeam {
-    position: absolute;
-    width: 700px;
-    height: 250px;
-    background-color: #f9f3f5;
-    border: none;
-    border-radius: 20px;
-    top: 900px;
-    left: 120px;
-  }
-
-  .BlockWithTeam p {
-    font-family: 'Inter', sans-serif;
-    font-size: 14pt;
-    position: absolute;
-    left: 20px;
-  }
-
-  .BlockWithIngridients {
-    position: absolute;
-    width: 700px;
-    height: 170px;
-    background-color: #d78ea8;
-    border: none;
-    border-radius: 20px;
-    top: 1170px;
-    left: 120px;
-  }
-
-  .BlockWithIngridients p {
-    color: white;
-    font-family: 'Inter', sans-serif;
-    font-size: 14pt;
-    position: absolute;
-    left: 20px;
-  }
-
-  .PictureFor2Blocks img {
-    position: absolute;
-    object-fit: cover;
-    top: 900px;
-    left: 850px;
-    height: 440px;
-    width: 550px;
-    border-radius: 20px;
-  }
-
-  .PopularTov {
-    position: absolute;
-    top: 1400px;
-    left: 120px;
-  }
-
-  .PopularTov p {
-    font-family: 'Inter', sans-serif;
-    font-size: 32pt;
-    font-weight: bold;
-  }
-
-  .HowToBuyBlock {
-    position: absolute;
-    height: 680px;
-    width: 1250px;
-    border-radius: 20px;
-    top: 2100px;
-    left: 120px;
-    background-color: #f9f3f5;
-  }
-
-  .HowToBuyText {
-    position: absolute;
-    font-size: 32pt;
-    font-weight: bold;
-    font-family: 'Inter', sans-serif;
-    top: 2100px;
-    left: 140px;
-  }
-
-  .HowToBuyDopText {
-    position: absolute;
-    font-size: 14pt;
-    font-family: 'Inter', sans-serif;
-    top: 2220px;
-    left: 140px;
-  }
-
-  .HowToBuyBlockPoint1 {
-    position: absolute;
-    height: 120px;
-    width: 600px;
-    border-radius: 20px;
-    top: 2150px;
-    left: 750px;
-    background-color: #d78ea8;
-    z-index: 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Inter', sans-serif;
-  }
-
-  .HowToBuyBlockPoint1 p {
-    position: absolute;
-    color: white;
-    font-family: 'Inter', sans-serif;
-    font-size: 36pt;
-    left: 20px;
-  }
-
-  .HowToBuyBlockPoint1Text {
-    position: absolute;
-    top: 2170px;
-    color: white;
-    font-family: 'Inter', sans-serif;
-    font-size: 14pt;
-    left: 850px;
-    z-index: 2;
-  }
-
-  .HowToBuyBlockPoint2 {
-    position: absolute;
-    height: 120px;
-    width: 600px;
-    border-radius: 20px;
-    top: 2300px;
-    left: 750px;
-    background-color: #d78ea8;
-    z-index: 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Inter', sans-serif;
-  }
-
-  .HowToBuyBlockPoint2 p {
-    position: absolute;
-    color: white;
-    font-family: 'Inter', sans-serif;
-    font-size: 36pt;
-    left: 20px;
-  }
-
-  .HowToBuyBlockPoint2Text {
-    position: absolute;
-    top: 2320px;
-    color: white;
-    font-family: 'Inter', sans-serif;
-    font-size: 14pt;
-    left: 850px;
-    z-index: 2;
-  }
-
-  .HowToBuyBlockPoint3 {
-    position: absolute;
-    height: 120px;
-    width: 600px;
-    border-radius: 20px;
-    top: 2450px;
-    left: 750px;
-    background-color: #d78ea8;
-    z-index: 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Inter', sans-serif;
-  }
-
-  .HowToBuyBlockPoint3 p {
-    position: absolute;
-    color: white;
-    font-family: 'Inter', sans-serif;
-    font-size: 36pt;
-    left: 20px;
-  }
-
-  .HowToBuyBlockPoint3Text {
-    position: absolute;
-    top: 2470px;
-    color: white;
-    font-family: 'Inter', sans-serif;
-    font-size: 14pt;
-    left: 850px;
-    z-index: 2;
-  }
-
-  .HowToBuyBlockPoint4 {
-    position: absolute;
-    height: 120px;
-    width: 600px;
-    border-radius: 20px;
-    top: 2600px;
-    left: 750px;
-    background-color: #d78ea8;
-    z-index: 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Inter', sans-serif;
-  }
-
-  .HowToBuyBlockPoint4 p {
-    position: absolute;
-    color: white;
-    font-family: 'Inter', sans-serif;
-    font-size: 36pt;
-    left: 20px;
-  }
-
-  .HowToBuyBlockPoint4Text {
-    position: absolute;
-    top: 2620px;
-    color: white;
-    font-family: 'Inter', sans-serif;
-    font-size: 14pt;
-    left: 850px;
-    z-index: 2;
-  }
-
-  .ButtonChooseDesert {
-    width: 200px;
-    height: 70px;
-    position: absolute;
-    top: 2650px;
-    background-color: white;
-    border: none;
-    border-radius: 40px;
-    left: 160px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .ButtonChooseDesert p {
-    color: black;
-    font-family: 'Inter', sans-serif;
-    font-size: 18pt;
-  }
-
-  .NavBar {
-    position: absolute;
-    top: -20px;
-    left: 120px;
-    font-weight: bold;
-    color: black;
-    font-family: 'Inter', sans-serif;
-    font-size: 24pt;
-  }
-
-  .Find {
-    position: absolute;
-    width: 700px;
-    height: 30px;
-    top: 20px;
-    border-radius: 30px;
-    left: 400px;
-    background-color: #f9f3f5;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-  }
-
-  .Find p {
-    position: absolute;
-    color: black;
-    font-family: 'Inter', sans-serif;
-    font-size: 14pt;
-    left: 20px;
-  }
-
-  .ForYou {
-    position: absolute;
-    width: 500px;
-    color: black;
-    left: 120px;
-    top: 40px;
-  }
-
-  .ForYou p {
-    position: absolute;
-    font-family: 'Inter', sans-serif;
-    font-weight: bold;
-    font-size: 32pt;
-  }
-
-  .products-grid,
-  .popular-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-  }
-
-  .products-grid {
-    position: relative;
-    margin-top: 120px;
-    width: calc(100% - 240px);
-    left: 120px;
-  }
-
-  .popular-grid {
-    position: absolute;
-    top: 1500px;
-    left: 120px;
-    width: calc(100% - 240px);
-  }
-
-  .product-card {
-    background: #fff;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .product-card:hover {
-    transform: translateY(-5px);
-  }
-
-  .product-image {
-    width: 100%;
-    height: 250px;
-    overflow: hidden;
-  }
-
-  .product-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .product-name {
-    font-size: 22px;
-    font-weight: bold;
-    margin: 15px 20px 5px;
-    color: #333;
-    font-family: 'Inter', sans-serif;
-  }
-
-  .product-price {
-    font-size: 20px;
-    color: #d78ea8;
-    margin: 0 20px 15px;
-    font-family: 'Inter', sans-serif;
-  }
-
-  .product-button {
-    background-color: #d78ea8;
-    color: white;
-    font-size: 18px;
-    text-align: center;
-    padding: 15px 0;
-    margin: 0 20px 20px;
-    border-radius: 40px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    font-family: 'Inter', sans-serif;
-    border: none;
-  }
-
-  .product-button:hover {
-    background-color: #c27a9b;
-  }
-
-  .Catalog {
-    position: absolute;
-    top: 10px;
-    height: 40px;
-    width: 120px;
-    left: 120px;
-    border: none;
-    font-size: 18pt;
-    border-radius: 15px;
-    background-color: #f8d3db;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Inter', sans-serif;
-  }
-
-  .CakesP {
-    position: absolute;
-    top: -20px;
-    left: 720px;
-    font-weight: bold;
-    font-size: 24pt;
-    align-items: center;
-    font-family: 'Inter', sans-serif;
-  }
-
-  .ProfileBlock {
-    position: absolute;
-    width: 350px;
-    height: 90px;
-    border-radius: 30px;
-    background-color: #f9f3f5;
-    top: 100px;
-    left: 120px;
-  }
-
-  .ProfileBlock p {
-    color: black;
-    font-size: 14pt;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Inter', sans-serif;
-  }
-
-  .ProfileBlock span {
-    color: black;
-    font-size: 14pt;
-    position: absolute;
-    font-family: 'Inter', sans-serif;
-    left: 110px;
-    top: 45px;
-  }
-
-  .DiscountBlock {
-    position: absolute;
-    width: 150px;
-    height: 90px;
-    border-radius: 30px;
-    background-color: #f9f3f5;
-    top: 100px;
-    left: 900px;
-  }
-
-  .DiscountBlock p {
-    color: black;
-    font-size: 14pt;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Inter', sans-serif;
-  }
-
-  .DiscountBlock span {
-    color: black;
-    font-size: 14pt;
-    position: absolute;
-    font-family: 'Inter', sans-serif;
-    left: 45px;
-    top: 45px;
-  }
-
-  .SumOfDeserts {
-    position: absolute;
-    width: 300px;
-    height: 90px;
-    border-radius: 30px;
-    background-color: #f9f3f5;
-    top: 100px;
-    left: 1100px;
-  }
-
-  .SumOfDeserts p {
-    color: black;
-    font-size: 14pt;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Inter', sans-serif;
-  }
-
-  .SumOfDeserts span {
-    color: black;
-    font-size: 14pt;
-    position: absolute;
-    font-family: 'Inter', sans-serif;
-    left: 45px;
-    top: 45px;
-  }
-
-  .YourBuyings {
-    position: absolute;
-    color: black;
-    font-family: 'Inter', sans-serif;
-    font-weight: bold;
-    font-size: 32pt;
-    left: 120px;
-    top: 220px;
-  }
-
-  .profile-grid {
-    position: absolute;
-    top: 350px;
-    left: 100px;
-    width: calc(100% - 240px);
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-  }
-
-  .ToProfile {
-    color: black;
-    position: absolute;
-    top: -60px;
-    right: 120px;
-  }
-
-  .ToProfile p {
-    font-size: 40pt;
-  }
-
-  .ToProfile1 {
-    color: black;
-    position: absolute;
-    top: -60px;
-    right: 120px;
-  }
-
-  .ToProfile1 p {
-    font-size: 40pt;
-  }
-
-  .ToBasket {
-    color: black;
-    position: absolute;
-    top: -60px;
-    right: 250px;
-  }
-
-  .ToBasket p {
-    font-size: 40pt;
-  }
-
-  .ToBasket {
-    color: black;
-    position: absolute;
-    top: -60px;
-    right: 250px;
-  }
-
-  .ToBasket1 p {
-    font-size: 40pt;
-  }
+* {
+  box-sizing: border-box;
 }
 
-.modal-overlay {
-  position: fixed;
+body {
+  margin: 0;
+  background: #fff8fb;
+  color: #29181f;
+  font-family: Inter, Arial, sans-serif;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button,
+.card-actions a,
+.hero a {
+  border: 0;
+  border-radius: 8px;
+  background: #c95f86;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 14px;
+  text-decoration: none;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  border: 1px solid #ead0da;
+  border-radius: 8px;
+  background: #fff;
+  padding: 10px 12px;
+}
+
+textarea {
+  min-height: 92px;
+  resize: vertical;
+}
+
+.app-header {
+  position: sticky;
   top: 0;
-  left: 0;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 16px clamp(20px, 6vw, 88px);
+  background: rgba(255, 248, 251, 0.94);
+  border-bottom: 1px solid #f0d9e1;
+  backdrop-filter: blur(12px);
+}
+
+.brand {
+  color: #29181f;
+  font-size: 28px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 18px;
+}
+
+nav a {
+  color: #4b2c38;
+  text-decoration: none;
+}
+
+.user-chip {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #6c4454;
+}
+
+.user-chip button {
+  padding: 8px 10px;
+}
+
+.locale-banner {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: min(460px, calc(100vw - 32px));
+  padding: 14px;
+  background: #29181f;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 20px 50px rgba(41, 24, 31, 0.25);
+}
+
+.locale-banner button {
+  background: #fff;
+  color: #29181f;
+}
+
+.auth-panel {
+  display: grid;
+  grid-template-columns: 220px 1fr 1fr auto;
+  gap: 10px;
+  padding: 16px clamp(20px, 6vw, 88px);
+  background: #fff;
+  border-bottom: 1px solid #f0d9e1;
+}
+
+.segmented {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  padding: 4px;
+  background: #f7e7ed;
+  border-radius: 8px;
+}
+
+.segmented button {
+  background: transparent;
+  color: #6c4454;
+}
+
+.segmented .active {
+  background: #fff;
+  color: #29181f;
+}
+
+.form-message {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: #9b234e;
+}
+
+.hero {
+  position: relative;
+  min-height: calc(100vh - 80px);
+  display: grid;
+  align-items: center;
+  padding: 80px clamp(20px, 8vw, 120px);
+  overflow: hidden;
+}
+
+.hero img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1000;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
+  object-fit: cover;
+  filter: brightness(0.62);
 }
 
-.modal-content {
-  margin-top: 80px;
-  margin-right: 20px;
-  animation: fadeInDown 0.3s ease-out;
+.hero div {
+  position: relative;
+  max-width: 720px;
+  color: #fff;
 }
 
-.screen-modal {
-  background-color: #ffffff;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+.hero h1 {
+  margin: 0 0 18px;
+  font-size: clamp(44px, 7vw, 82px);
+  line-height: 1;
+}
+
+.hero p {
+  max-width: 620px;
+  font-size: 20px;
+  line-height: 1.55;
+}
+
+.hero a {
+  display: inline-flex;
+  margin-top: 12px;
+  background: #fff;
+  color: #29181f;
+}
+
+.page {
+  padding: 42px clamp(20px, 6vw, 88px) 80px;
+}
+
+.page h1 {
+  margin: 0 0 24px;
+  font-size: 42px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
   display: flex;
   flex-direction: column;
-  padding: 40px;
-  border-radius: 20px;
-  width: 500px;
-  min-height: fit-content;
-  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #f0d9e1;
+  border-radius: 8px;
+  box-shadow: 0 12px 28px rgba(96, 47, 67, 0.08);
 }
 
-.screen-modal .text-wrapper {
-  text-align: center;
-  color: #000000;
-  font-size: 32px;
-  font-weight: 600;
-  margin-bottom: 30px;
+.product-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
 }
 
-.screen-modal .text-normal-instance,
-.screen-modal .text-normal-2 {
-  background-color: #f9f3f5 !important;
-  border-radius: 50px !important;
-  margin-bottom: 20px !important;
-  width: 100% !important;
-  height: 60px !important;
-  border: none !important;
-  outline: none !important;
-  padding: 0 20px !important;
-  font-size: 24px !important;
-  font-weight: 500 !important;
-  box-sizing: border-box !important;
-}
-
-.screen-modal .frame-button {
-  align-items: center;
-  background-color: #d68ea8;
-  border-radius: 50px;
+.product-body {
   display: flex;
-  height: 60px;
-  justify-content: center;
-  cursor: pointer;
-  transition: opacity 0.2s;
+  flex: 1;
+  flex-direction: column;
+  gap: 10px;
+  padding: 18px;
 }
 
-.screen-modal .frame-button:hover {
-  opacity: 0.9;
+.product-title-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
 }
 
-.screen-modal .div {
-  color: #ffffff;
+.product-title-row h3 {
+  margin: 0;
   font-size: 24px;
-  font-weight: 500;
 }
 
-.screen-modal .p-signup {
-  text-align: center;
-  margin-top: 25px;
-  font-size: 18px;
+.product-title-row span {
+  border-radius: 999px;
+  background: #f7e7ed;
+  color: #9b234e;
+  font-size: 13px;
+  padding: 5px 8px;
 }
 
-.screen-modal .text-wrapper-2 {
-  text-decoration: underline;
-  color: #d68ea8;
-  cursor: pointer;
+.product-body p {
+  margin: 0;
+  color: #6c4454;
+  line-height: 1.45;
 }
 
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
+.price {
+  color: #9b234e !important;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.rating-line {
+  font-size: 14px;
+}
+
+.card-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.card-actions a {
+  background: #29181f;
+}
+
+.product-page {
+  display: grid;
+  grid-template-columns: minmax(260px, 460px) minmax(0, 1fr);
+  gap: 40px;
+}
+
+.product-page > img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.review-form,
+.admin-form {
+  display: grid;
+  gap: 12px;
+  max-width: 720px;
+  margin: 24px 0;
+}
+
+.review-form label {
+  display: grid;
+  gap: 6px;
+  color: #6c4454;
+}
+
+.notice {
+  border-radius: 8px;
+  background: #fff;
+  color: #6c4454;
+  padding: 18px;
+}
+
+.review {
+  display: grid;
+  gap: 6px;
+  margin: 12px 0;
+  padding: 14px 0;
+  border-top: 1px solid #f0d9e1;
+}
+
+.review time {
+  color: #8a6674;
+  font-size: 14px;
+}
+
+.admin-page {
+  display: grid;
+  grid-template-columns: 280px minmax(0, 720px);
+  gap: 32px;
+}
+
+.admin-list {
+  display: grid;
+  gap: 10px;
+}
+
+.admin-list button {
+  background: #fff;
+  color: #29181f;
+  border: 1px solid #ead0da;
+  text-align: left;
+}
+
+.admin-form {
+  margin: 0;
+  padding: 22px;
+  background: #fff;
+  border: 1px solid #f0d9e1;
+  border-radius: 8px;
+}
+
+@media (max-width: 820px) {
+  .app-header,
+  .auth-panel,
+  .product-page,
+  .admin-page {
+    grid-template-columns: 1fr;
   }
 
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  .app-header,
+  .auth-panel {
+    display: grid;
+  }
+
+  .locale-banner {
+    left: 16px;
+    right: 16px;
+    flex-wrap: wrap;
   }
 }
