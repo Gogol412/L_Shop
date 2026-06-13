@@ -46,11 +46,11 @@ const CatalogPage = () => {
           </div>
         ))}
       </div>
-      <div className = "ToProfile1">
+        <div className = "ToProfile1">
             <Link to="/profile" style={{ textDecoration: 'none', color: 'inherit' }}>
             <p>☺</p>
             </Link>
-            </div>
+        </div>
     </>
   );
 };
